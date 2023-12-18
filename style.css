@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(120deg, #e2c35d , #d88771 );
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    font-size: 1.5;
+}
+header , form{
+    /* border: red 1px solid; */
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+   
+}
+
+form input{
+    
+    padding: 0.5rem;
+    font-size: 1rem;
+    width: 450px;
+    height: 45px;
+    border: none;
+    outline: none; /* Removes the focus outline (recommended) */
+    box-shadow: none;
+    background: white;
+    border-radius: 9px 0 0 9px;
+}
+form button{
+    color: #d88771;
+    padding: 0.5rem;
+    font-size: 1rem;
+    width: 40px;
+    height: 45px;
+    border: none;
+    background: white;
+    border-radius: 0 9px 9px 0px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+form button:hover{
+    background: #d88771;
+    color: white;
+
+}
+.todo-container{
+    /* border: red 1px solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+    
+   
+}
+.todo-list{
+    /* border: red 1px solid; */
+    min-width: 30%;
+    list-style: none;
+    padding-left: 10px;
+    background: white;
+    color: #505050;
+    border-radius: 9px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+.todo-list:hover{
+    transform: translateX(12px);
+}
+.todo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    transition: all 0.4s ease;
+}
+.todo-list li{
+    flex: 1;
+    font-weight: 600;
+    letter-spacing: 1px;
+    width: 350px;
+    overflow-wrap: break-word;
+    list-style-type: "👉🏼  ";
+    
+    /* text-decoration-line: line-through; */
+}
+
+.btn-check, .btn-delete{
+    border: none;
+    font-size: 22px;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    
+}
+.btn-delete{
+    border-radius: 0 9px 9px 0px;
+}
+.btn-check:hover{
+    background: #2cb62a;
+    color: rgb(253, 249, 249);
+}
+.btn-delete:hover{
+    background: #f1440f;
+    color: rgb(253, 249, 249);
+}
+
+
+.completed{
+    text-decoration:line-through;
+    opacity: 0.5;
+    transition: all 0.5s ease;
+    /* border: 1px solid red; */
+}
+.fall{
+   transform:translateY(8rem) rotateZ(20deg);
+   opacity: 0;
+}
+
+
+/* ---------------------------------"situation-btns"--------------------------- */
+
+.situation-btns{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.situation-btns button{
+    cursor: pointer;
+    margin-left: 10px;
+    min-width: 120px;
+    min-height: 30px;
+    border: none;
+    border-radius: 9px;
+    background: white;
+    color: #d88771;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.5s ease;
+}
+.situation-btns button:hover{
+    background: #d88771;
+    color: white;
+}
